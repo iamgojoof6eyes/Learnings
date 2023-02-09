@@ -34,15 +34,20 @@ while True:
     except ValueError:
         print("Should be natural number")
 
+while True:
+    Player = input("Now it's your turn....choose one...Hit R for Rock, Hit P for Paper, hit S for scisor. ")
+    player = Player.upper()
+    if player not in ["S","P","R"]:
+        print("Choices availabel\ns : Stone\np : Pape\n s : Scissor")
+    else:
+        break
+
 i = x
 y = []
 while x:
     print("\n")
     print(f"Round {i-x+1}")
     print('Computer is choosing one value.....')
-
-    Player = input("Now it's your turn....choose one...Hit R for Rock, Hit P for Paper, hit S for scisor. ")
-    player = Player.upper()
     
     
     print(f'Computer has choosen {Computer}')
