@@ -1,6 +1,8 @@
 # My first ever created code which is more than 10 lines
 
 import random
+
+
 def gameWin(Computer , player): #defining the function
     if Computer == player: # Game string
         return None
@@ -22,36 +24,40 @@ def gameWin(Computer , player): #defining the function
 
 
 ran = ('S','R','P') 
-Computer = random.choice(ran)
 
 while True:
     try:
-        x = int(input("Tell me how many rounds you want to play"))
+        x = int(input("Tell me how many rounds you want to play "))
         if not x:
             print("Can't be 0")
+        elif x < 0:
+            print("Can't be less than or equals to 0")
         else:
             break
     except ValueError:
         print("Should be natural number")
 
-while True:
-    Player = input("Now it's your turn....choose one...Hit R for Rock, Hit P for Paper, hit S for scisor. ")
-    player = Player.upper()
-    if player not in ["S","P","R"]:
-        print("Choices availabel\ns : Stone\np : Pape\n s : Scissor")
-    else:
-        break
+def choices():
+    Computer = random.choice(ran)
+    while True:
+        Player = input("Now it's your turn....choose one...\nHit R for Rock\nHit P for Paper\nHit S for scisor. ")
+        player = Player.upper()
+        if player not in ["S","P","R"]:
+            print("Choices availabel\ns : Stone\np : Pape\n s : Scissor")
+        else:
+            break
+    return player, Computer
 
 i = x
 y = []
 while x:
     print("\n")
     print(f"Round {i-x+1}")
-    print('Computer is choosing one value.....')
+    print('Computer is choosing one value...\n')
     
-    
-    print(f'Computer has choosen {Computer}')
-    print(f'You have choosen {Player}')
+    player, Computer = choices()
+    print(f'\nComputer has choosen {Computer}\n')
+    print(f'You have choosen {player}\n')
     
     win = gameWin(Computer, player)
     
@@ -66,9 +72,9 @@ while x:
         y.append("Lost")
         
     x = x-1
-l = len(y)
-for a in y:
-    z = f"So here are the Results:\nRound{len(y)-l + 1} : {a}"
 
+print("\nSo here are the Results:")
+for round, result in enumerate(y):
+    z = f"Round{round+1} : {result}\n"
     print(z)
 y.clear
