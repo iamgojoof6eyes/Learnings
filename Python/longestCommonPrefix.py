@@ -1,7 +1,7 @@
 """
-Problem link: https://leetcode.com/problems/roman-to-integer/
+Problem link: https://leetcode.com/problems/longest-common-prefix/
 
-Objective: Convert the roman numbers to integers
+Objective: Find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
 """
 
 
