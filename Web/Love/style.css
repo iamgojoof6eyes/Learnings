@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+html{
+    background-color: #ffb1be;
+}
+
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff3b76;
+    height: 550px;
+    width: 550px;
+    border-radius: 10%;
+    margin: 8vh 31vw;
+    transition: 0.5s;
+}
+.container:hover{
+    box-shadow: 5px 5px 15px 5px hotpink;
+}
+
+.text{
+    position: absolute;
+    top: 2%;
+    color: #e61336;
+    font-size: 55px;
+    font-family: 'Great Vibes', cursive;
+    transition: 0.5s;
+}
+
+.text .p2{
+    display: none;
+}
+
+.text:hover{
+    transform: scale(1.25,1.25);
+}
+
+.image{
+    width: 325px;
+    height: 350px;
+    position: absolute;
+    display: inline-block;
+    left: 22%;
+    top: 12%;
+}
+
+.mystic{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 1s;
+}
+
+.no-stic{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition-delay: 0.2s;
+}
+
+.mystic:hover{
+    transform: scale(1.25,1.25);
+}
+
+.text-2{
+    position: absolute;
+    bottom: 5%;
+    color: #e61336;
+    font-size: 55px;
+    font-family: 'Sevillana', cursive;
+    transition: 0.5s;
+    left: 8%;
+}
+
+.text-2:hover{
+    transform: scale(1.25,1.25);
+}
+
+.yes{
+    color: #dd1e57;
+    font-family: 'Sevillana', cursive;
+    display: inline-flex;
+    position: absolute;
+    height: 75px;
+    width: 200px;
+    left: 5%;
+    bottom: 5%;
+    font-size: 40px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 0, 43);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.yes a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.no{
+    color: #dd1e57;
+    font-family: 'Sevillana', cursive;
+    display: inline-flex;
+    position: absolute;
+    height: 75px;
+    width: 200px;
+    bottom: 5%;
+    right: 5%;
+    font-size: 40px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 0, 43);
+    z-index: 1;
+    cursor: not-allowed;
+}
+
+.yes:hover{
+    box-shadow: 5px 5px 15px 5px hotpink;
+}
+
+.container:has(.yes:hover) .mystic{
+    transform: scale(1.25,1.25);
+}
+
+.no:hover{
+    visibility: hidden;
+    /* background-color: #ffb1be;
+    border: none;
+    color: #ffb1be;
+    pointer-events: none; */
+}
+
+.container:has(.no:hover) .mystic{
+    display: none;
+}
+
+.container:has(.no:hover) .no-stic{
+    display:inherit;
+}
+
+.container:has(.no:hover) .text .p1{
+    display: none;
+}
+
+.container:has(.no:hover) .text .p2{
+    display: inherit;
+}
+
+
