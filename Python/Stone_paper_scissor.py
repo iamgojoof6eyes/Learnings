@@ -3,8 +3,12 @@
 import random
 
 
-def gameWin(Computer , player): #defining the function
-    if Computer == player: # Game string
+def gameWin(Computer: str ,player: str) -> bool or None:
+    """
+    :type Computer `string`: Item choosen by the computer
+    :type player `string` : Item choosen by the player
+    """
+    if Computer == player:
         return None
     elif Computer == 'R':
         if player == 'P':
@@ -31,13 +35,16 @@ while True:
         if not x:
             print("Can't be 0")
         elif x < 0:
-            print("Can't be less than or equals to 0")
+            print("Can't be less than 0")
         else:
             break
     except ValueError:
-        print("Should be natural number")
+        print("Rounds should be natural number")
 
 def choices():
+    """
+    Function to take user's input and decides computer's choice
+    """
     Computer = random.choice(ran)
     while True:
         Player = input("Now it's your turn....choose one...\nHit R for Rock\nHit P for Paper\nHit S for scisor. ")
