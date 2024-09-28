@@ -1,11 +1,13 @@
 # Projects
 
-Collection of all the code I have written to check my capibilites and learn few things and few code problem I have solved.
+I collected all the code I had written to check my capabilities and learn a few things and code problems I had solved.
 
 - [C codes](./C/)
   - [armstrong.c](./C/armstrong.c) : Check if the given number is armstrong or not.
   - [factorial.c](./C/factorial.c) : Find the factorial of any given number.
-  - [prime.c](./C/prime.c) : Check if the given number is prime or not.
+  - [find_prime.c](./C/find_prime.c) : Find the prime numbers between given range.
+  - [palindrome.c](./C/palindrome.c) : Check if the given string is palindrome or not (also works for integer values).
+  - [prime.c](./C/prime.c) : Check whether the given number is prime.
   - [reverse.c](./C/reverse.c) : Find the reverse of the given number.
 
 - [LeetCode's problem](./LeetCode/)
