@@ -1,3 +1,7 @@
+/*
+Will find reverse of the given number. The reverse number obtained can further be used to chech if the number is palindrome or not
+*/ 
+
 #include <stdio.h>
 
 int main() {

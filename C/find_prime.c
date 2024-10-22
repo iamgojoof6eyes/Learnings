@@ -1,3 +1,7 @@
+/*
+Code to find prime numbers between the given range
+*/
+
 #include <stdio.h>
 
 int is_prime(int num){
