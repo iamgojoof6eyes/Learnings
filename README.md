@@ -6,6 +6,7 @@ I collected all the code I had written to check my capabilities and learn a few 
   - [armstrong.c](./C/armstrong.c) : Check if the given number is armstrong or not.
   - [factorial.c](./C/factorial.c) : Find the factorial of any given number.
   - [find_prime.c](./C/find_prime.c) : Find the prime numbers between given range.
+  - [matrix.c](./C/matrix.c) : Basic matrix operations.
   - [palindrome.c](./C/palindrome.c) : Check if the given string is palindrome or not (also works for integer values).
   - [prime.c](./C/prime.c) : Check whether the given number is prime.
   - [reverse.c](./C/reverse.c) : Find the reverse of the given number.
