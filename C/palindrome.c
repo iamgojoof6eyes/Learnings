@@ -17,7 +17,7 @@ int main() {
 
     while(i<j){
         if(p[i] != p[j]){
-            printf("Give string is not a palindrome");
+            printf("Give string is not a palindrome\n");
             return 0;
         }
         else{
@@ -26,7 +26,7 @@ int main() {
             continue;
         }
     }
-    printf("Given string is plaindrome");
+    printf("Given string is plaindrome\n");
 
     return 0;
 }

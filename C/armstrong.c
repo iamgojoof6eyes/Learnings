@@ -23,7 +23,7 @@ void main(){
     
     l = num_length(n);
     arm = armstrong(n, l);
-    (arm == n) ? printf("%d is armstrong", n) : printf("%d is not an armstrong. The sum of the number raised to the length of number is %d", n, arm);
+    (arm == n) ? printf("%d is armstrong\n", n) : printf("%d is not an armstrong. The sum of the number raised to the length of number is %d\n", n, arm);
 }
 
 int num_length(int num){

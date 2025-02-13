@@ -4,13 +4,15 @@ I collected all the code I had written to check my capabilities and learn a few 
 
 - [C codes](./C/)
   - [armstrong.c](./C/armstrong.c) : Check if the given number is armstrong or not.
+  - [array.c](./C/array.c) : Few basic operations on array.
+  - [arthmetic_operations.c](./C/arthmetic_operations.c) : Code for few arthmetic sums and series.
   - [factorial.c](./C/factorial.c) : Find the factorial of any given number.
-  - [find_prime.c](./C/find_prime.c) : Find the prime numbers between given range.
+  - [find_prime.c](./C/find_prime.c) : Find the prime numbers between given range and Check whether the given number is prime.
   - [matrix.c](./C/matrix.c) : Basic matrix operations.
   - [palindrome.c](./C/palindrome.c) : Check if the given string is palindrome or not (also works for integer values).
   - [patterns.c](./C/patterns.c) : Code to print patterns
-  - [prime.c](./C/prime.c) : Check whether the given number is prime.
   - [reverse.c](./C/reverse.c) : Find the reverse of the given number.
+  - [variable_swap.c](./C/variable_swap.c) : Code to swap two variables.
 
 - [LeetCode's problem](./LeetCode/)
   - [longestCommonPrefix.py](./LeetCode/longestCommonPrefix.py) : Have to find longest common prefix in a string.

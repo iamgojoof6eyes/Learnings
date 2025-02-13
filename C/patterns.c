@@ -19,11 +19,7 @@ void main(){
     printf("How many lines should I print? ");
     scanf("%d", &lines);
 
-    pattern1(lines);
-
-    pattern2(lines);
-
-    pattern3(lines);
+    pattern1w(lines);
 
     pattern4(lines);
 }

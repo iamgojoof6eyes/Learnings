@@ -13,7 +13,7 @@ int main() {
     int original = n;
     
     if (n < 0){
-        printf("Reverse of a negative number is not possible.");
+        printf("Reverse of a negative number is not possible.\n");
     }
     else{
         while(n > 0){
@@ -21,7 +21,7 @@ int main() {
             rev = rev*10 + rem;
             n /= 10;
         }
-        printf("Reverse of the number %d is %d", original, rev);
+        printf("Reverse of the number %d is %d\n", original, rev);
     }
     
     return 0;
