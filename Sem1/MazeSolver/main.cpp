@@ -99,7 +99,7 @@ void drawGrid(RenderWindow& window) {
                 case START:   cell.setFillColor(Color::Green); break;
                 case END:     cell.setFillColor(Color::Red); break;
                 case PATH:    cell.setFillColor(Color::Blue); break;
-                case VISITED: cell.setFillColor(Color(200, 200, 200)); break;
+                case VISITED: cell.setFillColor(Color(173, 216, 231)); break;
             }
             cell.setPosition(Vector2f(static_cast<float>(j * CELL_SIZE), static_cast<float>(i * CELL_SIZE)));
             window.draw(cell);
