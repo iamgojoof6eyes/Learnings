@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "tasks": [
+        {
+          "label": "build C program",
+          "type": "shell",
+          "command": "gcc",
+          "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}/${fileBasenameNoExtension}.exe"
+          ],
+          "group": {
+            "kind": "build",
+            "isDefault": true
+          },
+          "problemMatcher": ["$gcc"],
+          "detail": "Generated task for building a C program."
+        }
+      ]
+}

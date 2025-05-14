@@ -1,4 +1,3 @@
-.vscode/
-*.exe
 tempCodeRunnerFile.c
 test.*
+**/resource/*
