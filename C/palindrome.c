@@ -1,41 +1,38 @@
 /*
 Palindrome are those string or numbers which is equal even if you reverse them
 */
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
-void convert_lower(int, char*);
+void to_lower(char*);
+void reverse(char*);
 
 int main() {
-    char p[50]; //will update when learn more c
-    
-    printf("Give me any character or number ");
-    scanf("%s", &p);
-    
-    int j = strlen(p) - 1; //put a pointer at end of the string i.e. on last character
-    
-    int i = 0; //put a pointer at first character
-    convert_lower(j, p);
-    while(i<j){
-        if(p[i] != p[j]){
-            printf("Give string %s is not a palindrome\n", p);
-            return 0;
-        }
-        else{
-            i++;
-            j--;
-            continue;
-        }
-    }
-    printf("Given string %s is plaindrome\n", p);
-
+    char s[50];
+    printf("Give me a string ");
+    scanf("%s", &s);
+    to_lower(s);
+    reverse(s);
     return 0;
 }
 
-void convert_lower(int len, char* string) {
-    for(int i = 0; i <= len; i++){
-        string[i] = tolower(string[i]);
+void to_lower(char* p){
+    int l = strlen(p) - 1;
+    for(int i = 0; i<=l; i++){
+        p[i] = tolower(p[i]);
     }
+}
+
+void reverse(char* p){
+    int l = strlen(p);
+    char t[l], temp;
+    strcpy(t,p);
+    for(int i = 0; i <= l-1; i++, l--){
+        temp = t[i];
+        t[i] = t[l-1];
+        t[l-1] = temp;
+    }
+    (strcmp(t, p)) ? printf("Not palindrome") : printf("Palindrome");
+    printf("\nPalindrome of %s is %s", p, t);
 }
